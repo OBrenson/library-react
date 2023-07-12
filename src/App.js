@@ -13,9 +13,10 @@ function App() {
   let booksList = [];
   let rowsList = [];
   let books = getData()
+  let nlMarker = Math.floor(window.innerWidth / 170);
   books.forEach((book, index) => {
     booksList.push(<Book value={book} />);
-    if(index === 2 || index === books.length -1) {
+    if(index === nlMarker - 1 || index === books.length -1) {
       let tmp = [...booksList.slice()]
       rowsList.push(<div className="row"> {tmp} </div>);
       booksList = [];
@@ -23,7 +24,10 @@ function App() {
   })
 
   return (
-    <div>
+    <div className="main">
+      <div className="navbar">
+
+      </div>
         {
             rowsList
         }

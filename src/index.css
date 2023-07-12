@@ -1,8 +1,61 @@
+.main {
+    margin: auto;
+}
+
 .row {
     display: flex;
     flex-direction: row;
 }
 
 .Book {
-    padding: 10px;
+    position: relative;
+    margin: 40px;
+    height: 205px;
+}
+
+.preview {
+    position: relative;
+    width: 100px;
+    height: 170px;
+    box-shadow: 0 1px 5px ;
+    border-radius: 0 0 15px 3px;
+}
+
+.image {
+    position: absolute;
+
+}
+
+.page {
+    position: absolute;
+    color: white;
+    -webkit-text-stroke: .02em rgba(0,0,0, 1);
+    font-size: 55px;
+    text-align: center;
+    width: 100px;
+}
+
+.author {
+    padding-top: 10px;
+    bottom: 0;
+    text-align: center;
+    width: 100px;
+    word-wrap: break-word
+}
+
+.navbar {
+    height: 50px;
+    background: #432fbf;
+    box-shadow: 0 2px 3px ;
+    border-radius: 15px 100px 15px 100px;
+}
+
+.percentBar {
+    position: absolute;
+    background: #de7b0e;
+    bottom: 0px;
+    height: 20px;
+    border-radius: 0 0 3px 3px;
+    font-size: 12px;
+    text-align: center;
 }
